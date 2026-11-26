@@ -4,17 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NEXORA LABS desarrolla herramientas digitales prácticas para emprendedores y negocios.">
-  <title>NEXORA LABS | Herramientas digitales</title>
+  <meta name="description" content="MicroGlobal desarrolla herramientas digitales prácticas para emprendedores, profesionales y pequeños negocios.">
+  <meta name="theme-color" content="#0b1020">
+  <title>MicroGlobal | Herramientas digitales</title>
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Inter, system-ui, Arial, sans-serif;
       background: #0b1020;
       color: #f4f6fc;
       line-height: 1.6;
     }
-    a { color: inherit; }
+
+    a {
+      color: inherit;
+    }
+
     header {
       padding: 22px 8%;
       display: flex;
@@ -22,57 +37,154 @@
       align-items: center;
       border-bottom: 1px solid #222b40;
     }
-    .logo { font-size: 22px; font-weight: 800; letter-spacing: 1px; }
-    .logo span { color: #8b7cff; }
-    nav a { text-decoration: none; margin-left: 24px; color: #c1c8da; }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #8b7cff;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 24px;
+      color: #c1c8da;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
     .hero {
-      padding: 110px 8% 100px;
-      max-width: 1100px;
+      padding: 115px 8% 105px;
+      max-width: 1250px;
       margin: auto;
     }
-    .tag { color: #9b8cff; font-weight: 700; letter-spacing: 2px; }
-    h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.08; margin: 20px 0; }
-    .hero p { max-width: 650px; color: #b9c2d6; font-size: 19px; }
+
+    .tag {
+      color: #9b8cff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.08;
+      margin: 22px 0;
+      max-width: 850px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: #b9c2d6;
+      font-size: 19px;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 13px 24px;
+      margin-top: 32px;
+      padding: 14px 25px;
       background: #7565ee;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 700;
+      transition: background 0.2s;
     }
-    section { padding: 75px 8%; }
-    .section-inner { max-width: 1100px; margin: auto; }
-    h2 { font-size: 34px; margin-bottom: 18px; }
-    .muted { color: #aeb8cc; }
+
+    .button:hover {
+      background: #8b7cff;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 18px;
+    }
+
+    .muted {
+      color: #aeb8cc;
+    }
+
     .product {
-      margin-top: 30px;
+      margin-top: 32px;
       background: #151d31;
       border: 1px solid #29334d;
       border-radius: 16px;
-      padding: 32px;
-      max-width: 650px;
+      padding: 35px;
+      max-width: 700px;
     }
-    .product h3 { font-size: 27px; margin-bottom: 10px; }
-    .status { color: #b7aaff; font-weight: 700; margin-top: 16px; }
+
+    .product h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .product-description {
+      color: #b9c2d6;
+    }
+
+    .status {
+      color: #b7aaff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .contact {
+      background: #11192b;
+    }
+
+    .contact a {
+      color: #a99cff;
+      text-decoration: none;
+    }
+
     footer {
       padding: 35px 8%;
       border-top: 1px solid #222b40;
       color: #9da8bd;
       font-size: 14px;
     }
-    footer a { margin-right: 18px; }
-    @media(max-width:650px) {
-      header { align-items: flex-start; gap: 15px; flex-direction: column; }
-      nav a { margin: 0 14px 0 0; font-size: 14px; }
-      .hero { padding-top: 75px; }
+
+    @media (max-width: 650px) {
+      header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 15px 0 0;
+      }
+
+      .hero {
+        padding-top: 75px;
+      }
+
+      section {
+        padding: 60px 8%;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
-    <div class="logo">NEXORA <span>LABS</span></div>
+    <div class="logo">MICRO<span>GLOBAL</span></div>
+
     <nav>
       <a href="#nosotros">Nosotros</a>
       <a href="#productos">Productos</a>
@@ -81,24 +193,36 @@
   </header>
 
   <main>
-    <div class="hero">
-      <div class="tag">TECNOLOGÍA · PRODUCTIVIDAD · SOFTWARE</div>
-      <h1>Herramientas digitales para trabajar mejor.</h1>
+
+    <section class="hero">
+      <div class="tag">SOFTWARE · TECNOLOGÍA · PRODUCTIVIDAD</div>
+
+      <h1>Soluciones digitales para un mundo en constante evolución.</h1>
+
       <p>
-        NEXORA LABS desarrolla aplicaciones y herramientas digitales
-        orientadas a resolver problemas concretos de emprendedores,
-        profesionales y pequeños negocios.
+        En MicroGlobal desarrollamos aplicaciones y herramientas
+        digitales diseñadas para resolver problemas concretos,
+        simplificar tareas y mejorar la productividad de personas
+        y pequeños negocios.
       </p>
-      <a class="button" href="#productos">Conocer nuestros productos</a>
-    </div>
+
+      <a class="button" href="#productos">
+        Explorar productos
+      </a>
+    </section>
 
     <section id="nosotros">
       <div class="section-inner">
-        <h2>Sobre NEXORA LABS</h2>
+        <h2>Sobre MicroGlobal</h2>
+
         <p class="muted">
-          Somos un proyecto independiente de desarrollo de software.
-          Nuestro objetivo es crear productos digitales simples,
-          accesibles y útiles, con foco en la experiencia de usuario.
+          MicroGlobal es un proyecto independiente de desarrollo
+          de software enfocado en crear productos digitales
+          accesibles, prácticos y fáciles de utilizar.
+
+          Nuestra misión es acercar herramientas tecnológicas
+          útiles a emprendedores, profesionales y empresas,
+          sin agregar complejidad innecesaria.
         </p>
       </div>
     </section>
@@ -106,38 +230,56 @@
     <section id="productos">
       <div class="section-inner">
         <h2>Nuestros productos</h2>
+
         <p class="muted">
-          Estamos desarrollando herramientas digitales para facilitar
-          tareas cotidianas y mejorar la gestión de pequeños negocios.
+          Creamos herramientas digitales para facilitar la
+          administración, organización y productividad.
         </p>
 
         <article class="product">
           <h3>MarginKit</h3>
-          <p class="muted">
-            Herramienta de cálculo de costos, precios de venta,
-            comisiones, ganancias y márgenes para negocios y
-            vendedores online.
+
+          <p class="product-description">
+            MarginKit es una herramienta de cálculo financiero
+            para vendedores online y pequeños negocios.
+
+            Permite calcular costos de adquisición, comisiones,
+            gastos, precios de venta, ganancias y márgenes
+            de rentabilidad.
           </p>
-          <p class="status">Producto en preparación para su lanzamiento comercial.</p>
+
+          <p class="status">
+            Producto en preparación para su lanzamiento comercial.
+          </p>
         </article>
+
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="contact">
       <div class="section-inner">
         <h2>Contacto y soporte</h2>
+
         <p class="muted">
-          Para consultas comerciales o asistencia sobre nuestros productos:
+          ¿Tenés alguna consulta sobre nuestros productos?
+          Nuestro equipo de soporte está disponible para ayudarte.
         </p>
-        <!-- Reemplazar por el correo real antes de publicar -->
-        <p>Correo: CONTACTO@TU-DOMINIO.COM</p>
+
+        <p style="margin-top: 20px;">
+          Correo:
+          <a href="mailto:GlobalMicroSoporte@gmail.com">
+            GlobalMicroSoporte@gmail.com
+          </a>
+        </p>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2026 NEXORA LABS. Todos los derechos reservados.</p>
-    <p>Información legal y políticas: pendientes de publicación.</p>
+    <p>© 2026 MicroGlobal. Todos los derechos reservados.</p>
+    <p>Desarrollo independiente de software y herramientas digitales.</p>
   </footer>
+
 </body>
 </html>
